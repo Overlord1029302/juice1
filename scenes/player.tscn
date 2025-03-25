@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://drwl87p4l7plp"]
+[gd_scene load_steps=52 format=3 uid="uid://drwl87p4l7plp"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_epcyd"]
 [ext_resource type="Texture2D" uid="uid://yp40ab3diini" path="res://Assets/Image20250317122304.png" id="2_tp4p4"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://73y2gxau5xg8" path="res://Assets/right.png" id="10_8lpdv"]
 [ext_resource type="PackedScene" uid="uid://bqehxq5lfqamu" path="res://scenes/aetherium bar.tscn" id="11_2wesi"]
 [ext_resource type="Texture2D" uid="uid://yd0w47rcydgb" path="res://Assets/left.png" id="11_ttijc"]
+[ext_resource type="AudioStream" uid="uid://dw6httix81a3c" path="res://Assets/Jump.wav" id="14_t13j0"]
+[ext_resource type="AudioStream" uid="uid://c8prusqjv45pq" path="res://Assets/Pickaxe.wav" id="15_4esvw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m84vq"]
 size = Vector2(28, 34)
@@ -496,5 +498,11 @@ modulate = Color(1, 1, 1, 0)
 position = Vector2(27, 17)
 scale = Vector2(0.12, 0.12)
 texture = ExtResource("11_ttijc")
+
+[node name="jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_t13j0")
+
+[node name="attack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_4esvw")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

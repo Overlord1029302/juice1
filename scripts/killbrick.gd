@@ -4,6 +4,7 @@ extends Area2D
 
 func _ready():
 	animated_sprite1.play("default")
+	
 
 
 

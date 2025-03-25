@@ -175,7 +175,7 @@ size = Vector2(5, 17)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_osrgk"]
 size = Vector2(91, 52)
 
-[node name="CharacterBody2D" type="CharacterBody2D" groups=["enemies"]]
+[node name="CharacterBody2D2" type="CharacterBody2D" groups=["enemies"]]
 script = ExtResource("1_5cjo2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

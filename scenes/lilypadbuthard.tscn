@@ -9,7 +9,7 @@ size = Vector2(78, 38)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w55y8"]
 size = Vector2(77, 26)
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 script = ExtResource("1_jubje")

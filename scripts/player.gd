@@ -95,6 +95,7 @@ func _input(event):
 	if event.is_action_pressed("ui_attack") and $AnimatedSprite2D.animation_finished:
 		is_attacking = true
 		$AnimatedSprite2D.play("attack")
+		$attack.play()
 		if $AnimatedSprite2D.flip_h == false:
 			get_node("AttackArea/right").disabled = false
 			get_node("AttackArea/left").disabled = true
@@ -108,6 +109,7 @@ func _input(event):
 	if event.is_action_pressed("ui_jump") and is_on_floor() and !is_attacking:
 		velocity.y = jump_height
 		$AnimatedSprite2D.play("jump")
+		$jump.play()
 	
 	if is_climbing == true:
 		if Input.is_action_pressed("ui_up"):

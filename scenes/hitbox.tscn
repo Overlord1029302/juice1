@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dgvjqywlwoa77" path="res://Assets/floating platform.png" id="4_ney27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gqomj"]
-size = Vector2(1184, 141)
+size = Vector2(1183, 139.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vsihj"]
 size = Vector2(195, 127.5)
@@ -102,7 +102,7 @@ b = Vector2(0, 81)
 a = Vector2(-47, 4)
 b = Vector2(7, 5)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D2" type="CharacterBody2D"]
 position = Vector2(7, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -230,7 +230,7 @@ scale = Vector2(2.875, 3.10655)
 texture = ExtResource("1_w0o4l")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="."]
-position = Vector2(-4, 584)
+position = Vector2(-4.5, 584.75)
 shape = SubResource("RectangleShape2D_gqomj")
 
 [node name="Sprite2D15" type="Sprite2D" parent="."]
